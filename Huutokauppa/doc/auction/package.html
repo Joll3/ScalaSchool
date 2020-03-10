@@ -1,0 +1,236 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>auction - auction</title>
+          <meta name="description" content="auction - auction" />
+          <meta name="keywords" content="auction auction" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../index.html';
+            var hash = 'auction.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../lib/package_big.png" />
+        
+        <h1>auction</h1> <span class="permalink">
+      <a href="../index.html#auction.package" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">auction</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="auction.Auction" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="AuctionextendsAnyRef"></a>
+      <a id="Auction:Auction"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Auction.html"><span class="name">Auction</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#auction.package@AuctionextendsAnyRef" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Auction holds auctioned items that users can try to bid on until the auction
+item is closed.</p><div class="fullcomment"><div class="comment cmt"><p>Auction holds auctioned items that users can try to bid on until the auction
+item is closed.</p><p>Auction is a fairly easily extendable base for building an electronic
+auctionhouse. One of the key elements is the use of events, which allows
+for easy to plug in mixins that can register themselves as event listeners
+and react to what happens in the auction.</p><p>The dispatcher is provided in a separate mixin called Dispatcher. This
+allows substituting the mixin when testing or for example providing a
+dispatcher that can dispatch events to remote Listeners etc.
+</p></div></div>
+    </li><li name="auction.AuctionItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AuctionItemextendsAnyRef"></a>
+      <a id="AuctionItem:AuctionItem"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AuctionItem.html"><span class="name">AuctionItem</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#auction.package@AuctionItemextendsAnyRef" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An item sold in an auction.</p><div class="fullcomment"><div class="comment cmt"><p>An item sold in an auction. The seller can set a starting bid and a minimum
+amount to raise for a bid to be acceptable.
+</p></div></div>
+    </li><li name="auction.Bid" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BidextendsProductwithSerializable"></a>
+      <a id="Bid:Bid"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Bid.html"><span class="name">Bid</span></a><span class="params">(<span name="item">item: <a href="AuctionItem.html" class="extype" name="auction.AuctionItem">AuctionItem</a></span>, <span name="who">who: <a href="User.html" class="extype" name="auction.User">User</a></span>, <span name="price">price: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#auction.package@BidextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A Single bid on an AuctionItem by an auction user for a given price.</p><div class="fullcomment"><div class="comment cmt"><p>A Single bid on an AuctionItem by an auction user for a given price.
+</p></div><dl class="paramcmts block"><dt class="param">item</dt><dd class="cmt"><p>an auction item</p></dd><dt class="param">who</dt><dd class="cmt"><p>a user bidding</p></dd><dt class="param">price</dt><dd class="cmt"><p>an amount of the bid
+</p></dd></dl></div>
+    </li><li name="auction.User" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UserextendsAnyRef"></a>
+      <a id="User:User"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="User.html"><span class="name">User</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#auction.package@UserextendsAnyRef" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Auction user account with credits to buy automated features provided by the
+auction implementation.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="auction.bots" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="bots"></a>
+      <a id="bots:bots"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="bots/package.html"><span class="name">bots</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#auction.package@bots" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="auction.event" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="event"></a>
+      <a id="event:event"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="event/package.html"><span class="name">event</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#auction.package@event" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="auction.log" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="log"></a>
+      <a id="log:log"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="log/package.html"><span class="name">log</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#auction.package@log" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="lines" key="selection"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="lines"/>
+			<item value="new"/>
+			<item value="3, 5, 1"/>
+			<item value="sana"/>
+			<item value="uudetSopivat"/>
+			<item value="clearing"/>
+			<item value="get"/>
+			<item value="RobotWorld"/>
+			<item value="robotworl"/>
+			<item value="neigh"/>
+		</list>
+		<list key="replacehistory">
+			<item value="this"/>
+			<item value="clearing.setNeighbor"/>
+			<item value="EnglishAuction"/>
+			<item value="varattu"/>
+			<item value="Onko"/>
+			<item value="DutchAuction"/>
+			<item value="interval"/>
+			<item value="end"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="290" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="409" key="DIALOG_HEIGHT"/>
+		<item value="169" key="DIALOG_Y_ORIGIN"/>
+		<item value="1131" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

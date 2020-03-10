@@ -1,0 +1,33 @@
+package o1.football2
+import scala.collection.mutable._
+import scala.math._
+/**
+ * @author Joll4
+ */
+class Season { 
+  
+  private val matches = Buffer[Match]()
+  private var fave: Option[Match] = None
+  
+  def addResult(newResult: Match): Unit = {
+    this.matches += newResult
+    if ((this.fave.isEmpty) || (abs(newResult.homeGoals - newResult.awayGoals) > abs(this.fave.get.homeGoals - this.fave.get.awayGoals))) {
+      fave = Some(newResult)
+      } 
+    else fave = fave
+    
+    }
+  
+  //private def chooseBetter(another: Match) = if (this.isBetterThan(another)) this else another
+  //private def isBetterThan(another: Match) = this.rating > another.rating
+
+ 
+  def latestMatch = if (matches.size == 0) None else Some(matches(matches.size - 1))
+  
+  def matchNumber(number: Int): Option[Match] = if (matches.size == 0) None else Some(matches(number))
+  
+  def numberOfMatches: Int = if (matches.size == 0) 0 else matches.size
+  
+  def biggestWin: Option[Match] = this.fave
+  
+}

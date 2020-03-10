@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;package.scala&apos; to &apos;r1-longestIncreasingSubsequence/src/longestIncreasingSubsequence&apos;&#x0A;- Original project: &apos;r1-longestIncreasingSubsequence&apos;&#x0A;- Destination element: &apos;r1-longestIncreasingSubsequence/src/longestIncreasingSubsequence&apos;&#x0A;- Original element: &apos;package.scala&apos;" description="Copy file" destination="/src&lt;longestIncreasingSubsequence" element1="src/longestIncreasingSubsequence/package.scala" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1519402954558" units="0" version="1.0"/>
+</session>

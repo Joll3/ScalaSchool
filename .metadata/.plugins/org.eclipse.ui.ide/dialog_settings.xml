@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="org.eclipse.cvs:1.4.401.v20170906-1700"/>
+		<item value="org.eclipse.egit:4.8.0.201706111038-r"/>
+		<item value="org.eclipse.emf.common:2.14.0.v20180527-1134"/>
+		<item value="org.eclipse.emf.ecore:2.14.0.v20180529-1144"/>
+		<item value="org.eclipse.epp.mpc:1.6.1.v20170906-1830"/>
+		<item value="org.eclipse.help:2.2.200.v20180611-0500"/>
+		<item value="org.eclipse.jdt:3.14.0.v20180611-0500"/>
+		<item value="org.eclipse.jgit:4.8.0.201706111038-r"/>
+		<item value="org.eclipse.m2e.feature:1.9.0.20180606-2036"/>
+		<item value="org.eclipse.pde:3.13.100.v20180611-0826"/>
+		<item value="org.eclipse.platform:4.8.0.v20180611-0656"/>
+		<item value="org.eclipse.rcp:4.8.0.v20180611-0656"/>
+		<item value="org.eclipse.userstorage:1.1.0.v20170526-1605"/>
+		<item value="org.python.pydev.feature:7.1.0.201902031515"/>
+		<item value="org.scala-ide.play2.feature:0.10.0.v-2_12-201709291421-fda12dd"/>
+		<item value="org.scala-ide.scala212.feature:4.7.0.201709291351"/>
+		<item value="org.scala-ide.sdk.feature:4.7.0.201709291443"/>
+		<item value="org.scala-ide.sdt.feature:4.7.0.v-2_12-201709291352-71a28d0"/>
+		<item value="org.scala-ide.sdt.lagom.feature:1.0.0.v-2_12-201709291428-78507a9"/>
+		<item value="org.scala-ide.sdt.scalatest.feature:2.10.0.v-4-6-2_12-201704041333-e62e4ad"/>
+		<item value="org.scala-ide.zinc.feature:4.7.0.201709291351"/>
+		<item value="org.scala.tools.eclipse.search.feature:0.6.0.v-2_12-201709291429-a02665c"/>
+		<item value="org.scalaide.worksheet.feature:0.7.0.v-2_12-201709291417-5d5e039"/>
+	</list>
+	<section name="CleanDialogSettings">
+		<item value="484" key="DIALOG_WIDTH"/>
+		<item value="false" key="BUILD_ALL"/>
+		<item value="true" key="TOGGLE_SELECTED"/>
+		<item value="423" key="DIALOG_HEIGHT"/>
+		<item value="false" key="BUILD_NOW"/>
+		<item value="300" key="DIALOG_Y_ORIGIN"/>
+		<item value="579" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/Joll4/Documents/Scala1&amp;2/r2-floatCaveat"/>
+			<item value=""/>
+			<item value="/Users/Joll4/Downloads/Huutokauppa"/>
+			<item value="/Users/Joll4/Downloads/kierros5"/>
+			<item value="/Users/Joll4/Downloads/KokeilujaKierros11"/>
+			<item value="/Users/Joll4/Downloads/Peeveli"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="/Users/Joll4/Downloads/r11-words.zip"/>
+			<item value="/Users/Joll4/Downloads/r11-clusterParallel.zip"/>
+			<item value="/Users/Joll4/Downloads/r10-threads.zip"/>
+			<item value="/Users/Joll4/Downloads/r12-binaryVision.zip"/>
+			<item value="/Users/Joll4/Downloads/r10-promises.zip"/>
+			<item value="/Users/Joll4/Downloads/r10-futures.zip"/>
+			<item value="/Users/Joll4/Downloads/r10-parallel.zip"/>
+			<item value="/Users/Joll4/Downloads/r7-percentiles.zip"/>
+			<item value="/Users/Joll4/Downloads/r8-linkedLists.zip"/>
+			<item value="/Users/Joll4/Downloads/r3-circuits.zip"/>
+			<item value="/Users/Joll4/Downloads/r3-gates.zip"/>
+			<item value="/Users/Joll4/Downloads/r2-base64.zip"/>
+			<item value="/Users/Joll4/Downloads/r2-parity.zip"/>
+			<item value="/Users/Joll4/Downloads/r2-floatCaveat.zip"/>
+		</list>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+			<item value="org.eclipse.ui.workingSets"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.scala-ide.sdt.core.wizards.newProject" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.scala-ide.sdt.core.wizards"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="524" key="DIALOG_X_ORIGIN"/>
+		<item value="325" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.internal.views.markers.FiltersConfigurationDialog">
+	</section>
+	<section name="ResourceListSelectionDialogSettings">
+		<item value="343" key="DIALOG_WIDTH"/>
+		<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText-Regular" key="DIALOG_FONT_NAME"/>
+		<item value="464" key="DIALOG_HEIGHT"/>
+		<item value="76" key="DIALOG_Y_ORIGIN"/>
+		<item value="263" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

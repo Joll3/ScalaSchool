@@ -1,0 +1,185 @@
+
+/*
+ * Assignment: Longest increasing subsequence
+ *
+ * Sequences are a natural source of computational problems. One such
+ * family of problems involves finding subsequences with specified
+ * properties in a given sequence. This exercise asks you to write 
+ * a program that, given a sequence
+ *
+ *   s(0), s(1), ..., s(n-1)
+ *
+ * of integers as input, finds a ___longest increasing subsequence___ 
+ * of the sequence s.
+ * 
+ * For example, suppose we are given as input the sequence
+ * 
+ *    72, 16, 51, 17, 6, 21, 92, 59, 54, 78, 41, 33, 94, 
+ *        85, 83, 56, 2, 46, 57, 44, 73, 6, 47, 47, 0.
+ *
+ * In this sequence, a longest increasing subsequence has length 7. 
+ * One example of such an increasing subsequence is 
+ *
+ *    16 < 17 < 21 < 54 < 56 < 57 < 73.
+ *
+ * More generally, your program must be such that 
+ * given a sequence
+ *
+ *   s(0), s(1), ..., s(n-1)
+ *
+ * of integers as input, the program returns a subsequence 
+ *
+ *   s(i_1), s(i_2), ..., s(i_k)
+ *
+ * that meets all of the following three properties:
+ * 
+ *   1. The positions that define the subsequence are increasing:
+ *
+ *        0 <= i_1 < i_2 < ... < i_k <= n-1
+ *
+ *   2. The subsequence is increasing:
+ *
+ *        s(i_1) < s(i_2) < ... < s(i_k)
+ *
+ *   3. The length k of the subsequence is as large as possible.
+ *
+ *
+ * Hints:
+ *
+ * You can solve this exercise using __dynamic programming__ as a 
+ * solution strategy. That is, you __tabulate__ solutions of carefully
+ * designed subproblems and use these solutions to gradually build your
+ * way up to solve larger and larger subproblems until you solve 
+ * the original problem. Here are some more detailed hints:
+ *
+ * a) Suppose that for all i = 0, 1, ..., j-1 we know L(i), the length 
+ *    of a longest increasing subsequence in s(0), s(1), ..., s(i)
+ *    that terminates at position i.
+ * b) Suppose we have already computed in an array the values
+ *    L(0), L(1), ..., L(j-1). How can we make use of these values 
+ *    to compute the next value L(j) ? 
+ * c) Furthermore, suppose for each i we know p(i), the position
+ *    prior to the last position i in a longest increasing subsequence 
+ *    that terminates at position i.
+ *    (Note that such a position p(i) need not always exist, however.)
+ * d) How can we make use of the values p(i) for i <= j to determine
+ *    a concrete increasing subsequence of length L(j) 
+ *    that terminates at j ?
+ * e) Design your program to complete the arrays L and p, one position 
+ *    at a time.
+ * f) Use the arrays L and p to return a concrete longest increasing
+ *    subsequence in the given sequence s.
+ *
+ */
+
+package object longestIncreasingSubsequence {
+
+  /** Returns a longest increasing subsequence in the sequence s.
+   *  If there are multiple such subsequences, any subsequence will do. */
+  def longestIncreasingSubsequence(s: Seq[Int]): Seq[Int] = {
+    require(s.length > 0) 
+    var P = Array.ofDim(s.length)
+    var M = Array.ofDim(s.length+1)
+    
+    var L = 0
+    for (i <- 0 until s.length-1){
+      var counter = i
+      var lo = 0
+      var hi = L
+      while (lo<=hi){
+        var mid = (((lo+hi)/2)+1).toInt
+        if(s(M(mid))<s(i)) lo = mid + 1
+        else
+          hi = mid-1 
+      }
+      var newL = lo
+        P(i) = M(newL-1)
+        M(newL) = i
+        if (newL > L) L = newL
+    }
+    var S = Array.ofDim(L)
+    var k = M(L)
+    for (i <- L-1 until 0){
+      S(i) = s(k)
+    }
+    Seq (1,2)
+  }
+  
+}
+//  def longestIncreasingSubsequence(s: Seq[Int]): Seq[Int] = {
+//    require(s.length > 0)
+//  
+//    val maxLengthAtJ = 0
+//    var CurrentSeqs: Seq[Seq[Int]] = Seq(s)
+//    
+//    for(alkioInt <- s){
+//      
+//      
+//      
+//    }
+//    
+//    def checkImprovement(currentSeqs: Array[Array[Int]], toCheck:Int): Array[Array[Int]]= {
+//      
+//      for(alkioSeq <- 0 until currentSeqs.length-1){
+//        if (toCheck > currentSeqs(alkioSeq).head){
+//          currentSeqs(alkioSeq) :+= toCheck
+//        }
+//      }
+//      return currentSeqs
+//      
+//    }
+//    
+//    
+//    
+//    return Seq(1,2)
+//  }
+  
+//}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+//    def findIncreasingSeq (checked: Seq[Int], toCheck:Seq[Int]): Seq[Seq[Int]]= {
+//      
+//      if (toCheck.length == 0) Seq(checked)
+//      else if (toCheck.head > checked.last)
+//        findIncreasingSeq(checked :+ toCheck.head, toCheck.tail) ++ findIncreasingSeq(checked, toCheck.tail)
+//        else
+//          findIncreasingSeq(checked, toCheck.tail)
+//     }
+//    
+//    var increasingSequences = Seq[Seq[Int]]()
+//    for ( i <- 0 until s.length) {
+//      val subsequence = s.drop(i)
+//      increasingSequences = increasingSequences ++ findIncreasingSeq(Seq(subsequence.head),subsequence.tail)
+//    }
+//    
+//    var maxL = 0
+//    
+//    increasingSequences.foreach{j=>if(j.length > maxL) maxL = j.length}
+//    
+//    increasingSequences.filter(s => s.length == maxL).head
+//    
+//  }
+//}
+
+

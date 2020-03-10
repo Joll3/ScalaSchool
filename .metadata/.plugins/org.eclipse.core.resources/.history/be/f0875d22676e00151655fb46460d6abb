@@ -1,0 +1,63 @@
+package kierros2
+
+import scala.collection.mutable.ArrayBuffer
+
+object AudioEffects {
+
+  def removeVocals(sound: StereoSound) : StereoSound = {
+    var soundArray = ArrayBuffer()
+    var i = 0
+    for (i <- 0 until sound.left.size){
+      val newPoint = (sound.left(i) - sound.right(i)) / 2
+      soundArray += newPoint
+    }
+    new StereoSound(soundArray, soundArray,)  
+  }
+
+  def fadeIn(sound: StereoSound, fadeLen: Int) : StereoSound = {
+    ???
+  }
+
+  def fadeOut(sound: StereoSound, fadeLen: Int) : StereoSound = {
+    ???
+  }
+
+  def fade(sound: StereoSound, fadeLen: Int) : StereoSound = {
+    ???
+  }
+
+  def panLeftToRight(sound: StereoSound, panLen: Int) : StereoSound = {
+    ???
+  }
+
+  def echo(sound: StereoSound, delay: Int) : StereoSound = {
+    ???
+  }
+  
+  def addEffects() : Unit = {
+    AudioEffectsHelp.addEffectNoIntParameter(
+      /*
+       * Usage:
+       * add methods like this:
+       * (methodName : parameterType) => returnType, <String to show on invoking button>, <String to show next to the button>
+       * parameterType and returnType should be StereoSound here
+       */
+      (removeVocals : StereoSound => StereoSound, "Remove Vocals", "Test with love.wav and cartoon.wav.")
+      )
+      
+    AudioEffectsHelp.addEffectWithIntParameter(
+      /*
+       * Usage:
+       * add methods like this:
+       * (methodName : (parameterType1, parameterType2)) => returnType, <String to show on invoking button>, <String to show next to the button>
+       * parameterType and returnType should be StereoSound here and paramterType2 Int
+       */
+      (fadeIn : (StereoSound, Int) => StereoSound, "Fade In", "Test with water.wav."),
+      (fadeOut : (StereoSound, Int) => StereoSound, "Fade Out", "Test with rain.wav."),
+      (fade : (StereoSound, Int) => StereoSound, "Fade", "Test with grace.wav."),
+      (panLeftToRight : (StereoSound, Int) => StereoSound, "Pan Left to Right", "Test with airplane.wav and doglake.wav."),
+      (echo : (StereoSound, Int) => StereoSound, "Echo", "Test with crow.wav amd welcome.wav.")
+      )
+  }
+
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>event - auction.event</title>
+          <meta name="description" content="event - auction.event" />
+          <meta name="keywords" content="event auction.event" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'auction.event.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="auction">auction</a></p>
+        <h1>event</h1> <span class="permalink">
+      <a href="../../index.html#auction.event.package" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">event</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="auction.event.AuctionEvent" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="AuctionEventextendsAnyRef"></a>
+      <a id="AuctionEvent:AuctionEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="AuctionEvent.html"><span class="name">AuctionEvent</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#auction.event.package@AuctionEventextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An AuctionEvent describes something that happens inside the auction.</p><div class="fullcomment"><div class="comment cmt"><p>An AuctionEvent describes something that happens inside the auction.
+Events are dispatched to interested parties in the program that can
+decide themselves on how to react to them.
+</p></div></div>
+    </li><li name="auction.event.AuctionExpired" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AuctionExpiredextendsAuctionEventwithProductwithSerializable"></a>
+      <a id="AuctionExpired:AuctionExpired"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AuctionExpired.html"><span class="name">AuctionExpired</span></a><span class="params">(<span name="item">item: <a href="../AuctionItem.html" class="extype" name="auction.AuctionItem">AuctionItem</a></span>)</span><span class="result"> extends <a href="AuctionEvent.html" class="extype" name="auction.event.AuctionEvent">AuctionEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#auction.event.package@AuctionExpiredextendsAuctionEventwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An event sent when an auction on an item closes without bids.</p><div class="fullcomment"><div class="comment cmt"><p>An event sent when an auction on an item closes without bids.
+</p></div><dl class="paramcmts block"><dt class="param">item</dt><dd class="cmt"><p>the expired item
+</p></dd></dl></div>
+    </li><li name="auction.event.AuctionWon" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AuctionWonextendsAuctionEventwithProductwithSerializable"></a>
+      <a id="AuctionWon:AuctionWon"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AuctionWon.html"><span class="name">AuctionWon</span></a><span class="params">(<span name="item">item: <a href="../AuctionItem.html" class="extype" name="auction.AuctionItem">AuctionItem</a></span>)</span><span class="result"> extends <a href="AuctionEvent.html" class="extype" name="auction.event.AuctionEvent">AuctionEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#auction.event.package@AuctionWonextendsAuctionEventwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An event sent when an auction on an item closes and is won by someone.</p><div class="fullcomment"><div class="comment cmt"><p>An event sent when an auction on an item closes and is won by someone.
+</p></div><dl class="paramcmts block"><dt class="param">item</dt><dd class="cmt"><p>the won item
+</p></dd></dl></div>
+    </li><li name="auction.event.BidBeaten" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BidBeatenextendsAuctionEventwithProductwithSerializable"></a>
+      <a id="BidBeaten:BidBeaten"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BidBeaten.html"><span class="name">BidBeaten</span></a><span class="params">(<span name="bid">bid: <a href="../Bid.html" class="extype" name="auction.Bid">Bid</a></span>)</span><span class="result"> extends <a href="AuctionEvent.html" class="extype" name="auction.event.AuctionEvent">AuctionEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#auction.event.package@BidBeatenextendsAuctionEventwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An event sent when a previous highest bid gets beaten.</p><div class="fullcomment"><div class="comment cmt"><p>An event sent when a previous highest bid gets beaten.
+</p></div><dl class="paramcmts block"><dt class="param">bid</dt><dd class="cmt"><p>the beaten bid.
+</p></dd></dl></div>
+    </li><li name="auction.event.BidRaised" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BidRaisedextendsAuctionEventwithProductwithSerializable"></a>
+      <a id="BidRaised:BidRaised"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BidRaised.html"><span class="name">BidRaised</span></a><span class="params">(<span name="bid">bid: <a href="../Bid.html" class="extype" name="auction.Bid">Bid</a></span>)</span><span class="result"> extends <a href="AuctionEvent.html" class="extype" name="auction.event.AuctionEvent">AuctionEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#auction.event.package@BidRaisedextendsAuctionEventwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An event sent when a user successfully places a new highest bid.</p><div class="fullcomment"><div class="comment cmt"><p>An event sent when a user successfully places a new highest bid.
+</p></div><dl class="paramcmts block"><dt class="param">bid</dt><dd class="cmt"><p>the new best bid.
+</p></dd></dl></div>
+    </li><li name="auction.event.Dispatcher" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="DispatcherextendsListener"></a>
+      <a id="Dispatcher:Dispatcher"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Dispatcher.html"><span class="name">Dispatcher</span></a><span class="result"> extends <a href="Listener.html" class="extype" name="auction.event.Listener">Listener</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#auction.event.package@DispatcherextendsListener" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Dispatcher takes care of dispatching an event to all the event listeners
+interested in receiving one.</p><div class="fullcomment"><div class="comment cmt"><p>Dispatcher takes care of dispatching an event to all the event listeners
+interested in receiving one. The dispatcher is also a listener itself making
+it possible to make a hierarchical event dispatching implementation.
+</p></div></div>
+    </li><li name="auction.event.Listener" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ListenerextendsAnyRef"></a>
+      <a id="Listener:Listener"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Listener.html"><span class="name">Listener</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#auction.event.package@ListenerextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Describes the interface of any component that wants to receive and react to
+events from the event dispatcher.</p>
+    </li><li name="auction.event.MessagingEvent" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MessagingEventextendsAuctionEventwithProductwithSerializable"></a>
+      <a id="MessagingEvent:MessagingEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MessagingEvent.html"><span class="name">MessagingEvent</span></a><span class="params">(<span name="receiver">receiver: <a href="../User.html" class="extype" name="auction.User">User</a></span>, <span name="message">message: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="AuctionEvent.html" class="extype" name="auction.event.AuctionEvent">AuctionEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#auction.event.package@MessagingEventextendsAuctionEventwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An event that requests for a message to be sent or logged.</p><div class="fullcomment"><div class="comment cmt"><p>An event that requests for a message to be sent or logged.
+</p></div><dl class="paramcmts block"><dt class="param">receiver</dt><dd class="cmt"><p>the message recipient</p></dd><dt class="param">message</dt><dd class="cmt"><p>the message content
+</p></dd></dl></div>
+    </li><li name="auction.event.NewAuction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NewAuctionextendsAuctionEventwithProductwithSerializable"></a>
+      <a id="NewAuction:NewAuction"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="NewAuction.html"><span class="name">NewAuction</span></a><span class="params">(<span name="item">item: <a href="../AuctionItem.html" class="extype" name="auction.AuctionItem">AuctionItem</a></span>)</span><span class="result"> extends <a href="AuctionEvent.html" class="extype" name="auction.event.AuctionEvent">AuctionEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#auction.event.package@NewAuctionextendsAuctionEventwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An event sent when a new auction opens.</p><div class="fullcomment"><div class="comment cmt"><p>An event sent when a new auction opens.
+</p></div><dl class="paramcmts block"><dt class="param">item</dt><dd class="cmt"><p>the opened item
+</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

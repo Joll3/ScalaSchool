@@ -1,0 +1,68 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title></title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <script type="text/javascript" src="lib/jquery.js"></script>
+      <script type="text/javascript" src="lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="lib/jquery.layout.js"></script>
+      <script type="text/javascript" src="lib/index.js"></script>
+      <script type="text/javascript" src="lib/scheduler.js"></script>
+    
+        </head>
+        <body>
+      <div id="library">
+        <img class="class icon" alt="class icon" src="lib/class.png" />
+        <img class="trait icon" alt="trait icon" src="lib/trait.png" />
+        <img class="object icon" alt="trait icon" src="lib/object.png" />
+        <img class="package icon" alt="trait icon" src="lib/package.png" />
+      </div>
+      <div id="browser" class="ui-layout-west">
+      <div class="ui-west-center">
+      <div id="filter">
+          <div id="textfilter"></div>
+          <div id="letters"><span>#</span><a target="template" href="index/index-a.html">A</a><a target="template" href="index/index-b.html">B</a><a target="template" href="index/index-c.html">C</a><a target="template" href="index/index-d.html">D</a><a target="template" href="index/index-e.html">E</a><a target="template" href="index/index-f.html">F</a><a target="template" href="index/index-g.html">G</a><a target="template" href="index/index-h.html">H</a><a target="template" href="index/index-i.html">I</a><span>J</span><span>K</span><a target="template" href="index/index-l.html">L</a><a target="template" href="index/index-m.html">M</a><a target="template" href="index/index-n.html">N</a><span>O</span><a target="template" href="index/index-p.html">P</a><span>Q</span><a target="template" href="index/index-r.html">R</a><a target="template" href="index/index-s.html">S</a><a target="template" href="index/index-t.html">T</a><a target="template" href="index/index-u.html">U</a><span>V</span><a target="template" href="index/index-w.html">W</a><span>X</span><span>Y</span><span>Z</span></div>
+      </div>
+      <div class="pack" id="tpl">
+            
+            <ol class="templates"></ol>
+            <ol class="packages"> <li class="pack" title="auction">
+            <a class="tplshow" href="auction/package.html" target="template">auction</a>
+            <ol class="templates"><li title="auction.Auction"><div class="placeholder"></div><a class="tplshow" href="auction/Auction.html" target="template"><span class="trait">(trait)</span><span class="tplLink">Auction</span></a></li><li title="auction.AuctionItem"><div class="placeholder"></div><a class="tplshow" href="auction/AuctionItem.html" target="template"><span class="class">(class)</span><span class="tplLink">AuctionItem</span></a></li><li title="auction.Bid"><div class="placeholder"></div><a class="tplshow" href="auction/Bid.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Bid</span></a></li><li title="auction.User"><div class="placeholder"></div><a class="tplshow" href="auction/User.html" target="template"><span class="class">(class)</span><span class="tplLink">User</span></a></li></ol>
+            <ol class="packages"> <li class="pack" title="auction.bots">
+            <a class="tplshow" href="auction/bots/package.html" target="template">auction.bots</a>
+            <ol class="templates"><li title="auction.bots.BidBot"><div class="placeholder"></div><a class="tplshow" href="auction/bots/BidBot.html" target="template"><span class="class">(class)</span><span class="tplLink">BidBot</span></a></li></ol>
+            <ol class="packages"> </ol>
+          </li><li class="pack" title="auction.event">
+            <a class="tplshow" href="auction/event/package.html" target="template">auction.event</a>
+            <ol class="templates"><li title="auction.event.AuctionEvent"><div class="placeholder"></div><a class="tplshow" href="auction/event/AuctionEvent.html" target="template"><span class="trait">(trait)</span><span class="tplLink">AuctionEvent</span></a></li><li title="auction.event.AuctionExpired"><div class="placeholder"></div><a class="tplshow" href="auction/event/AuctionExpired.html" target="template"><span class="case class">(case class)</span><span class="tplLink">AuctionExpired</span></a></li><li title="auction.event.AuctionWon"><div class="placeholder"></div><a class="tplshow" href="auction/event/AuctionWon.html" target="template"><span class="case class">(case class)</span><span class="tplLink">AuctionWon</span></a></li><li title="auction.event.BidBeaten"><div class="placeholder"></div><a class="tplshow" href="auction/event/BidBeaten.html" target="template"><span class="case class">(case class)</span><span class="tplLink">BidBeaten</span></a></li><li title="auction.event.BidRaised"><div class="placeholder"></div><a class="tplshow" href="auction/event/BidRaised.html" target="template"><span class="case class">(case class)</span><span class="tplLink">BidRaised</span></a></li><li title="auction.event.Dispatcher"><div class="placeholder"></div><a class="tplshow" href="auction/event/Dispatcher.html" target="template"><span class="trait">(trait)</span><span class="tplLink">Dispatcher</span></a></li><li title="auction.event.Listener"><div class="placeholder"></div><a class="tplshow" href="auction/event/Listener.html" target="template"><span class="trait">(trait)</span><span class="tplLink">Listener</span></a></li><li title="auction.event.MessagingEvent"><div class="placeholder"></div><a class="tplshow" href="auction/event/MessagingEvent.html" target="template"><span class="case class">(case class)</span><span class="tplLink">MessagingEvent</span></a></li><li title="auction.event.NewAuction"><div class="placeholder"></div><a class="tplshow" href="auction/event/NewAuction.html" target="template"><span class="case class">(case class)</span><span class="tplLink">NewAuction</span></a></li></ol>
+            <ol class="packages"> </ol>
+          </li><li class="pack" title="auction.log">
+            <a class="tplshow" href="auction/log/package.html" target="template">auction.log</a>
+            <ol class="templates"><li title="auction.log.ConsolePrinter"><a class="tplshow" href="auction/log/ConsolePrinter$.html" target="template"><span class="object">(object)</span><div class="placeholder"></div><span class="tplLink">ConsolePrinter</span></a></li></ol>
+            <ol class="packages"> </ol>
+          </li></ol>
+          </li><li class="pack" title="backends">
+            <a class="tplshow" href="backends/package.html" target="template">backends</a>
+            <ol class="templates"></ol>
+            <ol class="packages"> <li class="pack" title="backends.sms">
+            <a class="tplshow" href="backends/sms/package.html" target="template">backends.sms</a>
+            <ol class="templates"><li title="backends.sms.SMSService"><div class="placeholder"></div><a class="tplshow" href="backends/sms/SMSService.html" target="template"><span class="trait">(trait)</span><span class="tplLink">SMSService</span></a></li></ol>
+            <ol class="packages"> </ol>
+          </li></ol>
+          </li><li class="pack" title="tests">
+            <a class="tplshow" href="tests/package.html" target="template">tests</a>
+            <ol class="templates"><li title="tests.AuctionTest"><div class="placeholder"></div><a class="tplshow" href="tests/AuctionTest.html" target="template"><span class="class">(class)</span><span class="tplLink">AuctionTest</span></a></li><li title="tests.BotTest"><div class="placeholder"></div><a class="tplshow" href="tests/BotTest.html" target="template"><span class="class">(class)</span><span class="tplLink">BotTest</span></a></li></ol>
+            <ol class="packages"> </ol>
+          </li></ol>
+          </div></div><script src="index.js"></script>
+    </div>
+      <div id="content" class="ui-layout-center">
+        <iframe id="template" name="template" src="package.html"></iframe>
+      </div>
+    </body>
+      </html>
